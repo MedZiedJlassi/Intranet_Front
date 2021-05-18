@@ -1,0 +1,15 @@
+.footer{
+    background-color: $light-font-color;
+    padding: 15px;
+
+    .copyright{
+        color: $dark-font-color;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 0px;
+
+        span{
+            color: $color-primary;
+        };
+    }
+}

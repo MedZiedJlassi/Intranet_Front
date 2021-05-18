@@ -1,0 +1,35 @@
+.section-title {
+    margin-left: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $color-primary;
+    position: relative;
+    text-transform: capitalize;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $dark-font-color;
+      bottom: -5px;
+      left: 0;
+      width: 11%;
+      height: 4px;
+    }
+  }
+
+  .item-link-title{
+    text-transform: capitalize;
+  }
+
+  .module-title{
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: $color-sec;
+    font-weight: 700;
+  }
+
+  .article-title{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }

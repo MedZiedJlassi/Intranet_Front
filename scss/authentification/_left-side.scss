@@ -1,0 +1,47 @@
+.login-left-side {
+  position: relative;
+  background-color: $white;
+  height: 400px;
+  padding: 0;
+  border-bottom-left-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    z-index: 100;
+    width: 2px;
+    height: 70%; /* or 100px */
+    margin-left: 10px;
+    background: $color-sec;
+  }
+
+  @media (max-width: $sm) {
+    height: 20%;
+    width: 100%;
+    top: 0%;
+    border-bottom-left-radius: 0;
+    // background-color: transparent;
+    transform: translate(0, 0%);
+    -webkit-transform: translate(0, 0%);
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    -o-transform: translate(0, 0%);
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      z-index: 100;
+      top: auto;
+      right: auto;
+      width: 70%;
+      height: 2px; /* or 100px */
+      background: $color-sec;
+    }
+  }
+}

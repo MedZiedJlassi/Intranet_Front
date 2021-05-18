@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.15; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: left; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333333; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+ul, ol, li, dl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.login-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .login-wrap .login-content {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    box-shadow: 5px 5px 10px rgba(136, 136, 136, 0.5);
+    background-color: #E64C53; }
+    .login-wrap .login-content .login-left-side {
+      position: absolute;
+      background-color: #ffffff;
+      width: 250px;
+      height: 400px;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      border-bottom-left-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .login-wrap .login-content .login-left-side::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        z-index: 100;
+        top: 15%;
+        width: 2px;
+        height: 70%;
+        /* or 100px */
+        background: #707070; }
+      .login-wrap .login-content .login-left-side .logo {
+        width: 220px; }
+        .login-wrap .login-content .login-left-side .logo img {
+          width: 100%; }
+    .login-wrap .login-content .login-right-side {
+      position: absolute;
+      background-color: #ffffff;
+      color: #707070;
+      width: 350px;
+      height: 400px;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%); }
+      .login-wrap .login-content .login-right-side .form-group {
+        padding: 1.5rem 3rem 0 3rem;
+        overflow: hidden; }
+        .login-wrap .login-content .login-right-side .form-group .input-group {
+          margin-bottom: 1rem; }
+          .login-wrap .login-content .login-right-side .form-group .input-group .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            font-size: 15px; }
+          .login-wrap .login-content .login-right-side .form-group .input-group .form-control {
+            width: 100%;
+            height: 30px;
+            outline: none;
+            padding: 0 10px;
+            border: 1px solid #707070;
+            border-radius: 20px !important;
+            -webkit-border-radius: 20px !important;
+            -moz-border-radius: 20px !important;
+            -ms-border-radius: 20px !important;
+            -o-border-radius: 20px !important; }
+            .login-wrap .login-content .login-right-side .form-group .input-group .form-control:focus {
+              border-color: #e64c53;
+              box-shadow: 0 0 3px #e64c53; }
+        .login-wrap .login-content .login-right-side .form-group .btn-rounded {
+          margin-top: 1.7rem;
+          float: right;
+          padding: 0.3rem 1rem;
+          color: #ffffff;
+          background-color: #e64c53;
+          outline: none;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 15px;
+          border: 1px solid transparent;
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px; }
+          .login-wrap .login-content .login-right-side .form-group .btn-rounded:hover {
+            background-color: #ffffff;
+            color: #e64c53;
+            border-color: #e64c53;
+            transition: 0.2s ease-in;
+            -webkit-transition: 0.2s ease-in;
+            -moz-transition: 0.2s ease-in;
+            -ms-transition: 0.2s ease-in;
+            -o-transition: 0.2s ease-in; }
+      .login-wrap .login-content .login-right-side span a {
+        display: block;
+        text-decoration: none;
+        padding: 40px 15px 0 0;
+        float: right;
+        color: #707070; }

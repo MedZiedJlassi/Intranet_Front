@@ -1,0 +1,17 @@
+{
+  "name": "inforpro",
+  "version": "1.0.0",
+  "description": "Projet d'intranet propriétaire pour la sociétè Infopro-digital",
+  "main": "index.js",
+  "scripts": {
+    "compiler": "node-sass scss/main.scss dist/css/style.css",
+    "watch": "node-sass scss/main.scss dist/css/style.css -w",
+    "compressed" : "node-sass scss/main.scss dist/css/ministyle.css -w --output-ministyle=compressed"
+  },
+  "keywords": [],
+  "author": "Mohamed Zied JLASSI",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

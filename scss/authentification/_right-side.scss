@@ -1,0 +1,87 @@
+.login-right-side {
+  background-color: $white;
+  color: $color-sec;
+  height: 400px;
+
+  @media (max-width: $sm) {
+    width: 100%;
+    height: 80vh;
+    border-bottom-left-radius: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group {
+    padding-top: 1.5rem;
+    overflow: hidden;
+
+    .input-group {
+      margin-bottom: 1rem;
+      padding: 0 2rem;
+
+      .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        font-size: 12px;
+      }
+
+      .form-control {
+        width: 100%;
+        height: 30px;
+        outline: none;
+        padding: 0 10px;
+        font-size: 12px;
+        font-weight: 600;
+        border: 1px solid $color-sec;
+        border-radius: 20px !important;
+        -webkit-border-radius: 20px !important;
+        -moz-border-radius: 20px !important;
+        -ms-border-radius: 20px !important;
+        -o-border-radius: 20px !important;
+
+        &:focus {
+          border-color: $color-primary;
+          box-shadow: 0 0 3px $color-primary;
+        }
+      }
+
+      &:nth-child(2){
+        margin-bottom: 0;
+      }
+    }
+
+    .input-check {
+      padding: 0 2rem;
+      margin: 5px 0;
+
+      #checkbox:checked {
+        background-color: $color-primary !important;
+      }
+
+      .checkbox {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .erreur-msg{
+    width: 100%;
+    height: 70px;
+    margin-bottom: .5rem;
+
+    
+    @media (max-width : $md){
+        padding-left: 25px;
+    }
+  }
+  span a {
+    display: block;
+    font-size: 12px;
+    padding: 20px 15px 0 0;
+    float: right;
+    color: #707070;
+  }
+}

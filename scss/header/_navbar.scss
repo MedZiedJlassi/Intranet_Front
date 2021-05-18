@@ -1,0 +1,85 @@
+.navbar {
+  background-color: $light-font-color !important;
+  .logo {
+    width: 135px;
+  }
+  .navbar-collapse {
+    .search-bar {
+      position: relative;
+
+      .form-control {
+        border: 1px solid transparent;
+        outline: none !important;
+        border-radius: 20px;
+        line-height: 1.4;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .input-group-text {
+        position: absolute;
+        display: block;
+        background-color: transparent;
+        border: none;
+        right: 0;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          .fas,
+          .far,
+          .fa {
+            position: relative;
+            color: $dark-font-color !important;
+            font-size: 1.4rem !important;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+
+            &:hover,
+            .hover,
+            :active,
+            .active {
+              color: $color-primary !important;
+            }
+          }
+        }
+
+        .nav-link .fa-bell::after {
+          content: "1";
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          line-height: 18px;
+          text-align: center;
+          font-size: 12px;
+          font-weight: bold;
+          color: $white;
+          top: 8px;
+          left: 13px;
+          background-color: $color-primary;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+        }
+      }
+    }
+  }
+}
